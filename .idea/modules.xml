@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Project_MachineLearning.iml" filepath="$PROJECT_DIR$/Project_MachineLearning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datasets/datasets.iml" filepath="$PROJECT_DIR$/datasets/datasets.iml" />
+    </modules>
+  </component>
+</project>
