@@ -1,10 +1,10 @@
 import sys
 import time
-def initialize():
+def initialize(x):
     # Create initialization data and take a lot of time
 
     data = []
-    datafile = sys.argv[1]
+    datafile = sys.argv[x]
     starttimeinmillis = int(round(time.time()))
 
     f = open(datafile, 'r')

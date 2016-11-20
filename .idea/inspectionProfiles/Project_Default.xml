@@ -10,6 +10,8 @@
         <list>
           <option value="wrapper.exception" />
           <option value="wrapper.*" />
+          <option value="numpy" />
+          <option value="classify.sklearn" />
         </list>
       </option>
     </inspection_tool>
