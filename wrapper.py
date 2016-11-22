@@ -3,6 +3,8 @@ import traceback
 import mainprogram
 import classify
 import createtrainlabel
+from imp import reload
+
 
 if __name__=='__main__':
 
@@ -16,7 +18,7 @@ if __name__=='__main__':
             labels = mainprogram.initialize(2)
         try:
             if not is_first_iteration:
-                reload( mainprogram )
+                reload(mainprogram)
             is_first_iteration = False
             #mainprogram.select_features( cache )
             data1, predict1,labels1, predictlabels = createtrainlabel.createtrainlabel(cache,labels)
@@ -26,6 +28,5 @@ if __name__=='__main__':
             print ('Exception raised in tested module')
             print (traceback.print_exc())
             print ('*' * 64)
-
         print ("Press enter to re-run script or CTRL-C to exit")
         sys.stdin.readline()
