@@ -2,6 +2,7 @@ import numpy as np
 from sklearn.svm import LinearSVC
 from sklearn.svm import SVC
 from sklearn.preprocessing import scale
+import Balance_error
 
 def classify(data, labels, predict, predictlabels):
     X = np.array(scale(data))     #for LinearSVC
@@ -51,7 +52,7 @@ def classify(data, labels, predict, predictlabels):
         print(str(int(predictedl[i]))+" "+str(predictlabels[i]))
 
 
-        f.write(str(int(predictedl[i]))+" "+str(predictlabels[i]))
+        f.write(str(int(predictedl[i]))+" "+str(predictlabels[i])+'\n')
 
     #finalout.sort()
     #for i in range(0, len(predict), 1):
@@ -59,3 +60,4 @@ def classify(data, labels, predict, predictlabels):
 
     #print(clf.predict(predict))
     f.close()
+    Balance_error.balance_error("/Users/vishalkulkarni/Developments/Project_MachineLearning/datasets/trueclass.txt", "/Users/vishalkulkarni/Developments/Project_MachineLearning/pred0")

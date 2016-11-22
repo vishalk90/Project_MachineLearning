@@ -2,6 +2,9 @@ import random
 
 
 def createtrainlabel(data, labels):
+    temp = [x for x in data]
+    templ = [x for x in labels]
+    print("temp:",len(temp))
     tl = len(data)
     print(int(tl*0.1))
     #rand = [random.randrange(0, (tl-1)) for x in range(0,(tl),1)]
@@ -29,4 +32,4 @@ def createtrainlabel(data, labels):
     print(predictlabels,len(predict))
     #print(str(int(x[0]))+" "+str(int(x[1])))
 
-    return data, predict, labels, predictlabels
+    return temp, templ, data, predict, labels, predictlabels

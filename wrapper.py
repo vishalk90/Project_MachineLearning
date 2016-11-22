@@ -21,8 +21,11 @@ if __name__=='__main__':
                 reload(mainprogram)
             is_first_iteration = False
             #mainprogram.select_features( cache )
-            data1, predict1,labels1, predictlabels = createtrainlabel.createtrainlabel(cache,labels)
+            org_data, org_labels, data1, predict1,labels1, predictlabels = createtrainlabel.createtrainlabel(cache,labels)
             classify.classify(data1, labels1, predict1, predictlabels)
+            cache = org_data
+            labels = org_labels
+            print(len(org_data), len(org_labels))
         except Exception as e:
             print ('*' * 64)
             print ('Exception raised in tested module')
