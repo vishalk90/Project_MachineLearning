@@ -53,17 +53,18 @@ def calculateFscore(data, features, labels):
     print("calculate score")
     return F_score
 
-def selectFeature(features, F_score,labels):
+def selectFeature(features, F_score):
     num_feat = len(features)
     print("I am here")
-    seldata = [features[i] for i in range(num_feat) if F_score[i] > 28200]
+    seldata = [features[i] for i in range(num_feat) if F_score[i] > 28800]
     print("I am there")
     print(len(seldata))
     secdata = [list(x) for x in zip(*seldata)]
     print("datarow", len(secdata))
     print("datacol", len(secdata[0]))
-    callClasifier(labels,secdata)
+    return secdata
+    #callClasifier(labels,secdata)
 
 
-def callClasifier(labels,data):
-    wInitialization(data,labels)
+#def callClasifier(labels,data):
+#    wInitialization(data,labels)

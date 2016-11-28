@@ -3,61 +3,61 @@ from sklearn.svm import LinearSVC
 from sklearn.svm import SVC
 from sklearn.preprocessing import scale
 import Balance_error
+from sklearn import tree
 
 def classify(data, labels, predict, predictlabels):
+
     X = np.array(scale(data))     #for LinearSVC
     #X = np.array((data))
     y = np.array(labels)
+
     print(X)
     print(y)
+
     print("reached to classify")
+
+    ########################################
+    ######### classification method ########
+    ########################################
+
     clf = LinearSVC(max_iter=10000, verbose=1,).fit(X,[x[0] for x in y])
+    #clf = SVC(kernel='rbf', max_iter=10000, verbose=1,).fit(X,[x[0] for x in y])
+    #clf = tree.DecisionTreeClassifier().fit(X,[x[0] for x in y])
 
 
+    ########################################
+    ######## data prediction methods #######
+    ########################################
 
-
-#    SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
-#        decision_function_shape=None, degree=3, gamma='auto', kernel='linear',
-#        max_iter=-1, probability=False, random_state=None, shrinking=True,
-#        tol=0.000000001, verbose=False)
-#    LinearSVC(C=1.0, class_weight=None, dual=False, fit_intercept=True,
-#              intercept_scaling=1, loss='hinge', max_iter=20000,
-#              multi_class='crammer_singer', penalty='l2', random_state=None, tol=0.00000000001,
-#              verbose=0)
-
-
-
-
-
-
-
-
-    #loss ='hinge''squared_hinge'
-    predictedl=[]
-    finalout = []
-
-#    predictedl=clf.predict((predict))
+    #predictedl=clf.predict((predict))
     predictedl=clf.predict(scale(predict))     #For LinearSVC
 
+
+    ##########################################
+    ######## writing and printing data #######
+    ##########################################
+    finalout = []
     print('/n')
+
     f = open('/Users/vishalkulkarni/Developments/Project_MachineLearning/pred0', 'w')
     for i in range(0, len(predict), 1):
-        #print(int(predictedl[i]), predictlabels[i])
+
         l =[]
         l.append(predictlabels[i])
         l.append(int(predictedl[i]))
 
-        #finalout.append(str(int(predictedl[i]))+" "+str(predictlabels[i]))
         finalout.append(l)
-        print(str(int(predictedl[i]))+" "+str(predictlabels[i]))
 
+        print(str(int(predictedl[i]))+" "+str(predictlabels[i]))
 
         f.write(str(int(predictedl[i]))+" "+str(predictlabels[i])+'\n')
 
-    #finalout.sort()
-    #for i in range(0, len(predict), 1):
-    #    print(finalout[i])
-
-    #print(clf.predict(predict))
     f.close()
-    Balance_error.balance_error("/Users/vishalkulkarni/Developments/Project_MachineLearning/datasets/trueclass.txt", "/Users/vishalkulkarni/Developments/Project_MachineLearning/pred0")
+
+
+    #####################################################
+    ######## method call to find accuracy and BER #######
+    #####################################################
+
+    #Balance_error.balance_error("/Users/vishalkulkarni/Developments/Project_MachineLearning/datasets/trueclass.txt", "/Users/vishalkulkarni/Developments/Project_MachineLearning/pred0")
+    Balance_error.balance_error("/Users/vishalkulkarni/Developments/Project_MachineLearning/datasets/breast_cancer.labels", "/Users/vishalkulkarni/Developments/Project_MachineLearning/pred0")
