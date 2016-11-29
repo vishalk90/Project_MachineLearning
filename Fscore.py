@@ -54,13 +54,14 @@ def calculateFscore(data, features, labels):
         fscore = ((mean_pos - mean) ** 2 + (mean_neg - mean) ** 2) / (var_pos + var_neg)
         F_score.append(fscore)
     print("calculate score")
+    print(F_score)
     return F_score
 
 
 def selectFeature(features, F_score):
     num_feat = len(features)
     print("I am here")
-    seldata = [features[i] for i in range(num_feat) if F_score[i] > 28800]
+    seldata = [features[i] for i in range(num_feat) if F_score[i] > 10]
     print("I am there")
     print(len(seldata))
     secdata = [list(x) for x in zip(*seldata)]
