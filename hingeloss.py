@@ -144,7 +144,7 @@ def findHingeLoss(data, predictLabels):
                 print("0 " + str(i))
                 f.write("0 " + str(i)+'\n')
     f.close()
-    Balance_error.balance_error("/Users/vishalkulkarni/Developments/Project_MachineLearning/datasets/trueclass.txt", "/Users/vishalkulkarni/Developments/Project_MachineLearning/pred0")
+    Balance_error.balance_error("/Users/vishalkulkarni/Developments/Project_MachineLearning/datasets/trueclass.txt", "/Users/vishalkulkarni/Developments/Project_MachineLearning/pred1")
 
     #Balance_error.balance_error("/Users/vishalkulkarni/Developments/Project_MachineLearning/datasets/breast_cancer.labels", "/Users/vishalkulkarni/Developments/Project_MachineLearning/pred1")
     print("total execution time:",(time.time()-start)/60)

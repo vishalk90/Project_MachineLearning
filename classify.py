@@ -7,12 +7,9 @@ from sklearn import tree
 
 def classify(data, labels, predict, predictlabels):
 
-    X = np.array(scale(data))     #for LinearSVC
+    #X = np.array(scale(data))     #for LinearSVC
     #X = np.array((data))
-    y = np.array(labels)
-
-    print(X)
-    print(y)
+    #y = np.array(labels)
 
     print("reached to classify")
 
@@ -20,8 +17,8 @@ def classify(data, labels, predict, predictlabels):
     ######### classification method ########
     ########################################
 
-    clf = LinearSVC(max_iter=10000, verbose=1,).fit(X,[x[0] for x in y])
-    #clf = SVC(kernel='rbf', max_iter=10000, verbose=1,).fit(X,[x[0] for x in y])
+    #clf = LinearSVC(max_iter=15000, verbose=1,).fit(X,[x[0] for x in y])
+    clf = SVC(C=10, kernel='linear', verbose=1, tol=0.00000001).fit(data,[x[0] for x in labels])
     #clf = tree.DecisionTreeClassifier().fit(X,[x[0] for x in y])
 
 
@@ -29,8 +26,8 @@ def classify(data, labels, predict, predictlabels):
     ######## data prediction methods #######
     ########################################
 
-    #predictedl=clf.predict((predict))
-    predictedl=clf.predict(scale(predict))     #For LinearSVC
+    predictedl=clf.predict((predict))
+    #predictedl=clf.predict(scale(predict))     #For LinearSVC
 
 
     ##########################################

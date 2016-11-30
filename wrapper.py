@@ -4,6 +4,7 @@ import mainprogram
 import classify
 import createtrainlabel
 from imp import reload
+import standerdation
 import hingeloss
 
 
@@ -21,10 +22,12 @@ if __name__=='__main__':
             if not is_first_iteration:
                 reload(mainprogram)
             is_first_iteration = False
-            #mainprogram.select_features( cache )
+
+            #stdata = standerdation.calculatinglength(cache)
+
             org_data, org_labels, data1, predict1,labels1, predictlabels = createtrainlabel.createtrainlabel(cache,labels)
-            #classify.classify(data1, labels1, predict1, predictlabels)
-            hingeloss.findHingeLoss(org_data,labels1)
+            classify.classify(data1, labels1, predict1, predictlabels)
+            #hingeloss.findHingeLoss(org_data,labels1)
             cache = org_data
             labels = org_labels
             print(len(org_data), len(org_labels))

@@ -1,31 +1,24 @@
 import sys
 import time
-def initialize(x):
+def initialize(x: object) -> object:
     # Create initialization data and take a lot of time
 
     data = []
-    datafile = sys.argv[x]
     starttimeinmillis = int(round(time.time()))
 
-    f = open(datafile, 'r')
-    l = f.readline()
-    while (l != ''):
-        a = l.split()
-        l2 = []
-        for j in range(0, len(a), 1):
-            l2.append(float(a[j]))
-        #l2.append(float(1))
-        data.append(l2)
-        l = f.readline()
+    c =0
+    file1 = sys.argv[x]
+    with open(file1) as datafile:
+        for line in datafile:
+            c+=1
+            if(c%100==0):
+                print(".",sep='', end='',flush=True)
+            data.append([int(l) for l in line.split()])
 
     rows = len(data)
     cols = len(data[0])
     # print(data)
-    f.close()
-    #print("rows=", rows, " cols=", cols)
-    #print("total time taken:",int(round(time.time()))-starttimeinmillis)
-    return data
 
-#def select_features( data ):
-    #print()
-    # Code to test
+    #print("rows=", rows, " cols=", cols)
+    print("time took:",int(round(time.time()))-starttimeinmillis,"seconds")
+    return data

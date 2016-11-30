@@ -1,6 +1,5 @@
 import random
 
-
 def createtrainlabel(data, labels):
     temp = [x for x in data]
     templ = [x for x in labels]
@@ -29,7 +28,7 @@ def createtrainlabel(data, labels):
     #####################################################
     #for x in range(0,len(data),1):
     #    print(data[x], labels[x][0])
-    print(predictlabels,len(predict))
+    #  print(predictlabels,len(predict))
     #print(str(int(x[0]))+" "+str(int(x[1])))
 
     return temp, templ, data, predict, labels, predictlabels

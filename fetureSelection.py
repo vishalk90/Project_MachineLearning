@@ -1,14 +1,14 @@
-import sys
 from sklearn.svm import LinearSVC
-import numpy as np
+
+########################################
+######### Feature selection ############
+########################################
 
 def calFetures(data, labels):
-    #X = np.array((data))     #for LinearSVC
-    #X = np.array((data))
-    #y = np.array([x[0] for x in labels])
-    print("inside feature calc")
-    linearSVC = LinearSVC(C=0.0025, penalty='l1', dual=False).fit(data,[x[0] for x in labels])
-    score = linearSVC.__dict__.get('coef_')
+
+    print("Now selecting the bestfeatures...",sep='', end='',flush=True)
+    linearSVC = LinearSVC(C=0.001, penalty='l1', dual=False).fit(data,[x[0] for x in labels])
+    score = linearSVC.coef_
 
     feature = []
     for k in range(len(score[0])):
