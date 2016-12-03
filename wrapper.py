@@ -14,7 +14,8 @@ if __name__=='__main__':
     labels = None
     is_first_iteration = True
 
-    while True:
+    #while True:
+    for k in range(0,1,1):
         if not cache:
             cache = mainprogram.initialize(1)
             labels = mainprogram.initialize(2)
@@ -36,5 +37,5 @@ if __name__=='__main__':
             print ('Exception raised in tested module')
             print (traceback.print_exc())
             print ('*' * 64)
-        print ("Press enter to re-run script or CTRL-C to exit")
-        sys.stdin.readline()
+        #print ("Press enter to re-run script or CTRL-C to exit")
+        #sys.stdin.readline()

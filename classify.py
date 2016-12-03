@@ -7,18 +7,14 @@ from sklearn import tree
 
 def classify(data, labels, predict, predictlabels):
 
-    #X = np.array(scale(data))     #for LinearSVC
-    #X = np.array((data))
-    #y = np.array(labels)
-
     print("reached to classify")
 
     ########################################
     ######### classification method ########
     ########################################
 
-    #clf = LinearSVC(max_iter=15000, verbose=1,).fit(X,[x[0] for x in y])
-    clf = SVC(C=10, kernel='linear', verbose=1, tol=0.00000001).fit(data,[x[0] for x in labels])
+    clf = LinearSVC(max_iter=15000000, verbose=1,tol=0.00000001).fit(data,[x[0] for x in labels])
+    #clf = SVC(C=10, kernel='linear', verbose=1, tol=0.00000001).fit(data,[x[0] for x in labels])
     #clf = tree.DecisionTreeClassifier().fit(X,[x[0] for x in y])
 
 
@@ -45,7 +41,7 @@ def classify(data, labels, predict, predictlabels):
 
         finalout.append(l)
 
-        print(str(int(predictedl[i]))+" "+str(predictlabels[i]))
+        #print(str(int(predictedl[i]))+" "+str(predictlabels[i]))
 
         f.write(str(int(predictedl[i]))+" "+str(predictlabels[i])+'\n')
 
@@ -56,5 +52,6 @@ def classify(data, labels, predict, predictlabels):
     ######## method call to find accuracy and BER #######
     #####################################################
 
-    Balance_error.balance_error("/Users/vishalkulkarni/Developments/Project_MachineLearning/datasets/trueclass.txt", "/Users/vishalkulkarni/Developments/Project_MachineLearning/pred0")
+    #Balance_error.balance_error("/Users/vishalkulkarni/Developments/Project_MachineLearning/datasets/trueclass.txt", "/Users/vishalkulkarni/Developments/Project_MachineLearning/pred0")
+
     #Balance_error.balance_error("/Users/vishalkulkarni/Developments/Project_MachineLearning/datasets/breast_cancer.labels", "/Users/vishalkulkarni/Developments/Project_MachineLearning/pred0")

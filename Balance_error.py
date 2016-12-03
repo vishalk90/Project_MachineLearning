@@ -61,13 +61,13 @@ def balance_error(path1,path2):
     balance_error = (balance_error1 + balance_error2)/2
 
     accuracy = ((class0_true + class1_true)/len(outtraininglabels)) * 100
-    print("class0_false",class0_fasle)
-    print("class0_true:",class0_true)
-    print("class1_false:",class1_false)
-    print("class1_true:",class1_true)
-    print("balance_error:",balance_error)
-    print("accuracy : ", accuracy)
-    #return balance_error
+    #print("class0_false",class0_fasle)
+    #print("class0_true:",class0_true)
+    #print("class1_false:",class1_false)
+    #print("class1_true:",class1_true)
+    #print("balance_error:",balance_error)
+    #print("accuracy : ", accuracy)
+    return balance_error
 
-balance_error("/Users/vishalkulkarni/Developments/Project_MachineLearning/datasets/trueclass.txt", "/Users/vishalkulkarni/Developments/Project_MachineLearning/pred0")
+#balance_error("/Users/vishalkulkarni/Developments/Project_MachineLearning/datasets/trueclass.txt", "/Users/vishalkulkarni/Developments/Project_MachineLearning/pred0")
 #balance_error("/Users/vishalkulkarni/Developments/Project_MachineLearning/datasets/breast_cancer.labels", "/Users/vishalkulkarni/Developments/Project_MachineLearning/pred1")

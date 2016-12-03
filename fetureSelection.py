@@ -7,7 +7,7 @@ from sklearn.svm import LinearSVC
 def calFetures(data, labels):
 
     print("Now selecting the bestfeatures...",sep='', end='',flush=True)
-    linearSVC = LinearSVC(C=0.001, penalty='l1', dual=False).fit(data,[x[0] for x in labels])
+    linearSVC = LinearSVC(C=0.002, penalty='l1', dual=False).fit(data,[x[0] for x in labels])
     score = linearSVC.coef_
 
     feature = []
