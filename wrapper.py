@@ -14,8 +14,8 @@ if __name__=='__main__':
     labels = None
     is_first_iteration = True
 
-    #while True:
-    for k in range(0,1,1):
+    while True:
+    #for k in range(0,1,1): #if wants to run for once
         if not cache:
             cache = mainprogram.initialize(1)
             labels = mainprogram.initialize(2)
@@ -26,8 +26,8 @@ if __name__=='__main__':
 
             #stdata = standerdation.calculatinglength(cache)
 
-            org_data, org_labels, data1, predict1,labels1, predictlabels = createtrainlabel.createtrainlabel(cache,labels)
-            classify.classify(data1, labels1, predict1, predictlabels)
+            org_data, org_labels, data1, predictdata,labels1, predictlabels = createtrainlabel.createtrainlabel(cache,labels)
+            classify.classify(data1, labels1, predictdata, predictlabels)
             #hingeloss.findHingeLoss(org_data,labels1)
             cache = org_data
             labels = org_labels
@@ -37,5 +37,5 @@ if __name__=='__main__':
             print ('Exception raised in tested module')
             print (traceback.print_exc())
             print ('*' * 64)
-        #print ("Press enter to re-run script or CTRL-C to exit")
-        #sys.stdin.readline()
+        print ("Press enter to re-run script or CTRL-C to exit")
+        sys.stdin.readline()

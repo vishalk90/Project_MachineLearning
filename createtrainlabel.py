@@ -12,12 +12,12 @@ def createtrainlabel(data, labels):
     print("starting...")
     predict = []
     rangef=int(tl*0.1)
-    predictlabels =[]
+    predictdatarow =[]
     if rangef<1:
         rangef = 1
     for x in range(0, rangef ,1):
         randomnum = random.randrange(0, (len(data)-1))
-        predictlabels.append(randomnum)
+        predictdatarow.append(randomnum)
         predict.append(data[randomnum])
         del data[randomnum]
         del labels[randomnum]
@@ -31,4 +31,4 @@ def createtrainlabel(data, labels):
     #  print(predictlabels,len(predict))
     #print(str(int(x[0]))+" "+str(int(x[1])))
 
-    return temp, templ, data, predict, labels, predictlabels
+    return temp, templ, data, predict, labels, predictdatarow
