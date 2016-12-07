@@ -1,4 +1,4 @@
-import numpy as np
+
 from sklearn.svm import LinearSVC
 from sklearn.svm import SVC
 from sklearn.preprocessing import scale

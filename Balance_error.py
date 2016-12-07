@@ -67,7 +67,8 @@ def balance_error(path1,path2):
     #print("class1_true:",class1_true)
     #print("balance_error:",balance_error)
     #print("accuracy : ", accuracy)
-    return balance_error
+    #return balance_error
+    return accuracy
 
 #balance_error("/Users/vishalkulkarni/Developments/Project_MachineLearning/datasets/trueclass.txt", "/Users/vishalkulkarni/Developments/Project_MachineLearning/pred0")
 #balance_error("/Users/vishalkulkarni/Developments/Project_MachineLearning/datasets/breast_cancer.labels", "/Users/vishalkulkarni/Developments/Project_MachineLearning/pred1")
