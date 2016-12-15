@@ -27,7 +27,7 @@ def readfile(x):
     except IndexError:
         print()
         print ("#"*104)
-        print("###### Improper Syntax: try - python3 SNP_FinalProject.py traindata trainlabels testdata {i.e. 3 dataset files} #####")
+        print("###### Improper Syntax: try - python3 SNP_FinalProject1.py traindata trainlabels testdata {i.e. 3 dataset files} #####")
         print ("#"*104)
         sys.exit()
 
@@ -78,7 +78,7 @@ def createTrainlabel(data, labels):
 def calFetures(data, labels):
 
     print("Now selecting the bestfeatures....................",sep='', end='',flush=True)
-    linearSVC = LinearSVC(C=0.0024, penalty='l1', dual=False).fit(data,[x[0] for x in labels])# HERE CHANGE THE VALUE OF C FROM 0.002 TO 0.0021 OR 0.0024 OR 0.003 OR MORE TO GET MORE FEATURES {MORE ACCURACY}...(:D)
+    linearSVC = LinearSVC(C=0.002, penalty='l1', dual=False).fit(data,[x[0] for x in labels])# HERE CHANGE THE VALUE OF C FROM 0.002 TO 0.0021 OR 0.0024 OR 0.003 OR MORE TO GET MORE FEATURES {MORE ACCURACY}...(:D)
     score = linearSVC.coef_
 
     feature = []
@@ -175,7 +175,7 @@ def predictLabels(traindata, trainlabels, testdata):
     predictedlabels_file = open('/Users/vishalkulkarni/Developments/Project_MachineLearning/predictedlabels', 'w')
 
     for i in range(0, len(testdata), 1):
-        #print(str(predictedlabels[i])+" "+str(i))
+        print(str(predictedlabels[i])+" "+str(i))
         predictedlabels_file.write(str(predictedlabels[i])+" "+str(i)+'\n')
 
     predictedlabels_file.close()
