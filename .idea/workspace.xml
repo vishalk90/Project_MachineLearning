@@ -2,12 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0947776-391a-4215-be56-1811dd9ad441" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/datasets/trueclass.txt" afterPath="$PROJECT_DIR$/datasets/trueclass" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasets/SNP_FinalProject1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasets/breast_cancer.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasets/breast_cancer.labels" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasets/breast_cancer.trainlabels.0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasets/data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasets/datasets.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasets/labels" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasets/labels0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasets/labels1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasets/labels2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasets/labels3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasets/labels4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasets/labels5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasets/labels6" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasets/labels7" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasets/labels8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasets/labels9" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasets/testdata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasets/testdata.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasets/traindata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasets/trueclass" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SNP_FinalProject.py" afterPath="$PROJECT_DIR$/SNP_FinalProject.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bestfeaturedata" afterPath="$PROJECT_DIR$/bestfeaturedata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bestfeaturestestdata" afterPath="$PROJECT_DIR$/bestfeaturestestdata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/predictedlabels" afterPath="$PROJECT_DIR$/predictedlabels" />
     </list>
     <ignored path="Project_MachineLearning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,30 +61,8 @@
       <file leaf-file-name="SNP_FinalProject.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SNP_FinalProject.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2790">
+            <state relative-caret-position="540">
               <caret line="189" column="60" lean-forward="false" selection-start-line="189" selection-start-column="60" selection-end-line="189" selection-end-column="60" />
-              <folding>
-                <element signature="e#595#608#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="labels8" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/datasets/labels8">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107985">
-              <caret line="7199" column="6" lean-forward="false" selection-start-line="7199" selection-start-column="6" selection-end-line="7199" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SNP_FinalProject1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/datasets/SNP_FinalProject1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
               <folding>
                 <element signature="e#595#608#0" expanded="true" />
               </folding>
@@ -81,66 +75,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="labels2" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/datasets/labels2">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107985">
-              <caret line="7199" column="6" lean-forward="false" selection-start-line="7199" selection-start-column="6" selection-end-line="7199" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bestfeaturedata" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bestfeaturedata">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PCA.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PCA.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="predictedLabels1" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/predictedLabels1">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2000" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="predictedlabels" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/predictedlabels">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29940">
-              <caret line="1996" column="6" lean-forward="false" selection-start-line="1996" selection-start-column="6" selection-end-line="1996" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trueclass" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/datasets/trueclass">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120000">
-              <caret line="8000" column="0" lean-forward="false" selection-start-line="8000" selection-start-column="0" selection-end-line="8000" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -234,8 +168,9 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
     <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="height" value="1006" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -286,6 +221,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -300,9 +236,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -873,7 +808,7 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
+      <command value="run" />
       <scripts />
       <node-interpreter value="project" />
       <envs />
@@ -1060,11 +995,12 @@
       <workItem from="1480812720609" duration="12345000" />
       <workItem from="1481082571102" duration="18003000" />
       <workItem from="1481531726914" duration="1022000" />
+      <workItem from="1481781359091" duration="1098000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130748000" />
+    <option name="totallyTimeSpent" value="131846000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1076,8 +1012,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1680" height="1006" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1090,10 +1026,10 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.48783976" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32809225" sideWeight="0.47313797" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32747254" sideWeight="0.47313797" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2728938" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2759463" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1198,13 +1134,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/breast_cancer.trainlabels.0">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/datasets/labels9">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
@@ -1216,13 +1145,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/breast_cancer.labels">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6060">
-          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1272,13 +1194,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="780" column="6" lean-forward="false" selection-start-line="780" selection-start-column="6" selection-end-line="780" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/breast_cancer.data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="103" lean-forward="false" selection-start-line="12" selection-start-column="103" selection-end-line="12" selection-end-column="103" />
         </state>
       </provider>
     </entry>
@@ -1415,9 +1330,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1260">
           <caret line="88" column="39" lean-forward="false" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
-          <folding>
-            <element signature="e#595#608#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1437,49 +1349,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/predictedLabels1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2000" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/trueclass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120000">
-          <caret line="8000" column="0" lean-forward="false" selection-start-line="8000" selection-start-column="0" selection-end-line="8000" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/predictedlabels">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29940">
-          <caret line="1996" column="6" lean-forward="false" selection-start-line="1996" selection-start-column="6" selection-end-line="1996" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/datasets/labels2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107985">
-          <caret line="7199" column="6" lean-forward="false" selection-start-line="7199" selection-start-column="6" selection-end-line="7199" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SNP_FinalProject.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2790">
-          <caret line="189" column="60" lean-forward="false" selection-start-line="189" selection-start-column="60" selection-end-line="189" selection-end-column="60" />
-          <folding>
-            <element signature="e#595#608#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datasets/labels8">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107985">
           <caret line="7199" column="6" lean-forward="false" selection-start-line="7199" selection-start-column="6" selection-end-line="7199" selection-end-column="6" />
@@ -1489,11 +1359,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/datasets/SNP_FinalProject1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="240">
           <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/labels8">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="7199" column="6" lean-forward="false" selection-start-line="7199" selection-start-column="6" selection-end-line="7199" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SNP_FinalProject.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="189" column="60" lean-forward="false" selection-start-line="189" selection-start-column="60" selection-end-line="189" selection-end-column="60" />
           <folding>
             <element signature="e#595#608#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/trueclass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="8000" column="0" lean-forward="false" selection-start-line="8000" selection-start-column="0" selection-end-line="8000" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/breast_cancer.trainlabels.0">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/breast_cancer.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="103" lean-forward="false" selection-start-line="12" selection-start-column="103" selection-end-line="12" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/breast_cancer.labels">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predictedlabels">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="1996" column="6" lean-forward="false" selection-start-line="1996" selection-start-column="6" selection-end-line="1996" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/predictedLabels1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2000" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
